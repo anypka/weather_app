@@ -4,9 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Weather application" />
+    <title>SheCodes Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h>Project</h>
+   <div id = "root">
+    <div  class ="App">
+      <div class = "container">
+        <div class = "weather">
+          <form>
+           <div class ="row">
+            <div class="col-9 ">
+              <input type="search" placeholder="Enter a city.." class="form-control search-input">
+            </div>
+              <div class="col-3 p-0">
+                <input type="submit" class="btn btn-primary w-100" value="Search">
+              </div>
+              </div>
+           </div> 
+          </form>
+          <div class = "WeatherInfo">
+            <div class="row">
+              <div class="col-6">
+                <h1>New York</h1>
+                <ul>
+                  <li><span>Sunday 13:13</span>, clear sky</li>
+                  <li>Humidity: <strong>74%</strong>, Wind: <strong>2.57km/h</strong></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="temperature-container d-flex justify-content-end">
+                  <canvas width="52" height="52"></canvas>
+                  <div>
+                    <span class="temperature">7</span>
+                    <span class="unit">°C</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="WeatherForecast row">
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Sun</div>
+                <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">17°</span>
+                  <span class="forecast-temperature-min">7°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Mon</div>
+                <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">19°</span>
+                  <span class="forecast-temperature-min">11°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Tue</div>
+                <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">21°</span>
+                  <span class="forecast-temperature-min">12°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Wed</div>
+                <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">20°</span>
+                  <span class="forecast-temperature-min">14°</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="WeatherForecastPreview">
+                <div class="forecast-time">Thu</div>
+                <canvas width="38" height="38"></canvas>
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">20°</span>
+                  <span class="forecast-temperature-min">16°</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            "This project was created by Anna Tepliakova"
+          </footer>
+        </div>
+      </div>
+    </div>
+   </div>
   </body>
 </html>
