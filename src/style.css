@@ -1,15 +1,23 @@
+body {
+  background: #f9f7fe;
+}
+
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+}
+
 .Weather {
+  display: block;
   font-family: "Cerebri-Sans", Helvetica, Arial, sans-serif;
   background: white;
   border-radius: 16px;
   box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
   padding: 40px;
   color: rgb(135, 135, 135);
-}
-
-.Weather .logo {
-  max-width: 150px;
-  display: block;
 }
 
 .Weather form {
@@ -146,13 +154,4 @@
 
 .WeatherInfo .temperature-container {
   margin-top: 30px;
-}
-
-body {
-  background: #f9f7fe;
-}
-
-.App {
-  max-width: 800px;
-  margin: 60px auto;
 }
